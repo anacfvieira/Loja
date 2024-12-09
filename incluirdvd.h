@@ -19,7 +19,7 @@ private:
     Ui::IncluirDVD *ui;
 
 signals:
-    void signIncluirDVD(QString nomeIn, QString precoIn, QString numfaixasIn);
+    void signIncluirDVD(QString nomeIn, QString precoIn, QString duracaoIn);
 };
 
 #endif // INCLUIRDVD_H
