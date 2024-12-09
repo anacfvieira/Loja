@@ -19,7 +19,7 @@ private:
     Ui::IncluirLivro *ui;
 
 signals:
-    void signIncluirLivro();
+    void signIncluirLivro(QString nomeIn, QString precoIn, QString autorIn);
 };
 
 #endif // INCLUIRLIVRO_H
