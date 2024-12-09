@@ -63,6 +63,8 @@ MainLoja::MainLoja(QWidget *parent)
 
     //Realizando conexoes
     connect(inclLivro, &IncluirLivro::signIncluirLivro, this, &MainLoja::slotIncluirLivro);
+    connect(inclCD, &IncluirLivro::signIncluirCD, this, &MainLoja::slotIncluirCD);
+    connect(inclDVD, &IncluirDVD::signIncluirDVD, this, &MainLoja::slotIncluirDVD);
 }
 
 MainLoja::~MainLoja()
