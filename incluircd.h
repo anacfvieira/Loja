@@ -19,7 +19,7 @@ private:
     Ui::IncluirCD *ui;
 
 signals:
-    void signIncluirCD();
+    void signIncluirDVD(QString nomeIn, QString precoIn, QString numfaixasIn);
 };
 
 
