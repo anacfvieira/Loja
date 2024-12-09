@@ -19,7 +19,7 @@ private:
     Ui::IncluirCD *ui;
 
 signals:
-    void signIncluirCD(QString nomeIn, QString precoIn, QString duracaoIn);
+    void signIncluirCD(QString nomeIn, QString precoIn, QString numfaixasIn);
 };
 
 
