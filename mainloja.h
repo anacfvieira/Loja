@@ -39,9 +39,29 @@ private slots:
 
     void slotIncluirLivro(QString nome, QString preco, QString autor);
 
-    void slotIncluirCD(QString nome, QString preco, QString numfaixas);
+    void slotIncluirCD(QString nome, QString preco, QString duracao);
 
     void slotIncluirDVD(QString nome, QString preco, QString duracao);
+
+    void on_actionLer_triggered();
+
+    void on_actionSalvar_triggered();
+
+    void on_actionSair_triggered();
+
+    void on_actionIncluir_Livro_triggered();
+
+    void on_actionIncluir_CD_triggered();
+
+    void on_actionIncluir_DVD_triggered();
+
+    void exibirLivros();
+
+    void exibirCDs();
+
+    void exibirDVDs();
+
+    void mudarStatus();
 
 };
 #endif // MAINLOJA_H
