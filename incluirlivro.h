@@ -15,11 +15,16 @@ public:
     explicit IncluirLivro(QWidget *parent = nullptr);
     ~IncluirLivro();
 
+    void clear();
+
 private:
     Ui::IncluirLivro *ui;
 
 signals:
     void signIncluirLivro(QString nomeIn, QString precoIn, QString autorIn);
+
+private slots:
+    void on_buttonBox_accepted();
 };
 
 #endif // INCLUIRLIVRO_H
