@@ -29,6 +29,9 @@
       </item>
       <item>
        <widget class="QTableWidget" name="tabelaLivros">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
         <property name="verticalScrollBarPolicy">
          <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
         </property>
@@ -42,12 +45,18 @@
          <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
         </property>
         <property name="selectionBehavior">
-         <enum>QAbstractItemView::SelectionBehavior::SelectItems</enum>
+         <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
         </property>
         <property name="columnCount">
          <number>3</number>
         </property>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
         <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
          <bool>false</bool>
         </attribute>
         <column/>
@@ -89,7 +98,13 @@
         <property name="columnCount">
          <number>3</number>
         </property>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
         <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
          <bool>false</bool>
         </attribute>
         <column/>
@@ -134,7 +149,13 @@
         <property name="columnCount">
          <number>3</number>
         </property>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
         <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
          <bool>false</bool>
         </attribute>
         <column/>
@@ -155,8 +176,57 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionLer"/>
+    <addaction name="actionSalvar"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuItem">
+    <property name="title">
+     <string>Item</string>
+    </property>
+    <addaction name="actionIncluir_Livro"/>
+    <addaction name="actionIncluir_CD"/>
+    <addaction name="actionIncluir_DVD"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuItem"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLer">
+   <property name="text">
+    <string>Ler...</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="text">
+    <string>Salvar...</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="actionIncluir_Livro">
+   <property name="text">
+    <string>Incluir Livro...</string>
+   </property>
+  </action>
+  <action name="actionIncluir_CD">
+   <property name="text">
+    <string>Incluir CD...</string>
+   </property>
+  </action>
+  <action name="actionIncluir_DVD">
+   <property name="text">
+    <string>Incluir DVD...</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
