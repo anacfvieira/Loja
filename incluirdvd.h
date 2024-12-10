@@ -15,11 +15,15 @@ public:
     explicit IncluirDVD(QWidget *parent = nullptr);
     ~IncluirDVD();
 
+    void clear();
+
 private:
     Ui::IncluirDVD *ui;
 
 signals:
     void signIncluirDVD(QString nomeIn, QString precoIn, QString duracaoIn);
-};
 
+private slots:
+    void on_buttonBox_accepted();
+};
 #endif // INCLUIRDVD_H
