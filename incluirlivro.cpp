@@ -12,3 +12,10 @@ IncluirLivro::~IncluirLivro()
 {
     delete ui;
 }
+
+void IncluirLivro::clear() {
+    ui->lineEditNome->setText("");
+    ui->lineEditPreco->setText("");
+    ui->lineEditAutor->setText("");
+}
+
