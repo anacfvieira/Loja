@@ -12,3 +12,9 @@ IncluirCD::~IncluirCD()
 {
     delete ui;
 }
+
+void IncluirCD::clear() {
+    ui->lineEditNome->setText("");
+    ui->lineEditPreco->setText("");
+    ui->lineEditNumFaixas->setText("");
+}
