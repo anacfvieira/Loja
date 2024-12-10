@@ -12,3 +12,9 @@ IncluirDVD::~IncluirDVD()
 {
     delete ui;
 }
+
+void IncluirDVD::clear() {
+    ui->lineEditNome->setText("");
+    ui->lineEditPreco->setText("");
+    ui->lineEditDuracao->setText("");
+}
