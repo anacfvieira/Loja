@@ -31,7 +31,7 @@ MainLoja::MainLoja(QWidget *parent)
     //Barra de status
     // Insere os widgets da barra de status
     statusBar()->insertWidget(0,new QLabel("Total de itens: "));
-    statusBar()->insertWidget(1,new QLabel(total_itens));
+    mudarStatus();
 
      //Mudando os nomes das colunas
     QStringList nomesColunas1;
@@ -198,11 +198,12 @@ void MainLoja::slotIncluirCD(QString nome, QString preco, QString numfaixas) {
     if (NomeC!="" && PrecoC>0.0 && Faixas>0) {
         CD cd(NomeC, PrecoC, Faixas);
         X.incluirCD(cd);
+        exibirCDs();
     }
     else {
         qDebug() << "deu errado";
         QString message = QString("Nao foi possivel incluir o CD:\n"
-                                  "Nome=%1\nPreco=%2\nAutor=%3")
+                                  "Nome=%1\nPreco=%2\nN° Faixas=%3")
                                 .arg(nome)
                                 .arg(preco)
                                 .arg(numfaixas);
@@ -218,10 +219,11 @@ void MainLoja::slotIncluirDVD(QString nome, QString preco, QString duracao) {
     if (NomeD!="" && PrecoD>0.0 && Duracao>0) {
         DVD dvd(NomeD, PrecoD, Duracao);
         X.incluirDVD(dvd);
+        exibirDVDs();
     }
     else {
         QString message = QString("Nao foi possivel incluir o DVD:\n"
-                                  "Nome=%1\nPreco=%2\nAutor=%3")
+                                  "Nome=%1\nPreco=%2\nDuração=%3")
                                 .arg(nome)
                                 .arg(preco)
                                 .arg(duracao);
