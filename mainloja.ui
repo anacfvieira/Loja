@@ -67,54 +67,6 @@
      </layout>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <item>
-       <widget class="QLabel" name="labelDvds">
-        <property name="frameShape">
-         <enum>QFrame::Shape::Box</enum>
-        </property>
-        <property name="text">
-         <string>DVDS</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QTableWidget" name="tabelaDvds">
-        <property name="verticalScrollBarPolicy">
-         <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
-        </property>
-        <property name="horizontalScrollBarPolicy">
-         <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
-        </property>
-        <property name="tabKeyNavigation">
-         <bool>false</bool>
-        </property>
-        <property name="selectionMode">
-         <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
-        </property>
-        <property name="selectionBehavior">
-         <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
-        </property>
-        <property name="columnCount">
-         <number>3</number>
-        </property>
-        <attribute name="horizontalHeaderHighlightSections">
-         <bool>false</bool>
-        </attribute>
-        <attribute name="verticalHeaderVisible">
-         <bool>false</bool>
-        </attribute>
-        <attribute name="verticalHeaderHighlightSections">
-         <bool>false</bool>
-        </attribute>
-        <column/>
-        <column/>
-        <column/>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
      <layout class="QVBoxLayout" name="verticalLayout"/>
     </item>
     <item>
@@ -165,6 +117,54 @@
       </item>
      </layout>
     </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLabel" name="labelDvds">
+        <property name="frameShape">
+         <enum>QFrame::Shape::Box</enum>
+        </property>
+        <property name="text">
+         <string>DVDS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tabelaDvds">
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+        </property>
+        <property name="tabKeyNavigation">
+         <bool>false</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+        </property>
+        <property name="columnCount">
+         <number>3</number>
+        </property>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </item>
+     </layout>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -173,7 +173,7 @@
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArquivo">
