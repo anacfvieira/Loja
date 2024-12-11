@@ -38,8 +38,8 @@ MainLoja::MainLoja(QWidget *parent)
     QStringList nomesColunas2;
     QStringList nomesColunas3;
     nomesColunas1 << "NOME" << "PRECO" << "AUTOR";
-    nomesColunas2 << "NOME" << "PRECO" << "DURACAO";
-    nomesColunas3 << "NOME" << "PRECO" << "N FAIXAS";
+    nomesColunas2 << "NOME" << "PRECO" << "N FAIXAS";
+    nomesColunas3 << "NOME" << "PRECO" << "DURACAO";
 
     ui->tabelaLivros->setHorizontalHeaderLabels(nomesColunas1);
     ui->tabelaCds->setHorizontalHeaderLabels(nomesColunas2);
@@ -201,7 +201,6 @@ void MainLoja::slotIncluirCD(QString nome, QString preco, QString numfaixas) {
         exibirCDs();
     }
     else {
-        qDebug() << "deu errado";
         QString message = QString("Nao foi possivel incluir o CD:\n"
                                   "Nome=%1\nPreco=%2\nN° Faixas=%3")
                                 .arg(nome)
@@ -271,7 +270,6 @@ void MainLoja::on_actionSair_triggered() {
 
 void MainLoja::on_actionIncluir_Livro_triggered() {
     inclLivro->clear();
-    qDebug() << "mostrando";
     inclLivro->show();
 }
 
